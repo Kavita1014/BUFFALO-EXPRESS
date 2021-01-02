@@ -1,0 +1,162 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/images/logo1.jpg" alt="LOGO OF THE COMPANY" style="width:100px; height:20px ;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+           
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Our Services
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">International</a>
+                    <a class="dropdown-item" href="#">Domestic</a>
+                    <a class="dropdown-item" href="#">logistic</a>
+                    <a class="dropdown-item" href="#">Sea Freight</a>
+                    <a class="dropdown-item" href="#">Air Freight</a>
+
+                </div>
+            </li>
+
+           
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    How to Ship
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Packing Your shipment</a>
+                    <a class="dropdown-item" href="#">Weight Calculation</a>
+                    <a class="dropdown-item" href="#">Prohibited Items</a>
+                    <a class="dropdown-item" href="#">Documents</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tracking</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Account
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Login</a>
+                    <a class="dropdown-item" href="#">Register</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Support
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Customer Support</a>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                    <a class="dropdown-item" href="#">News</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    About Us
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Our Mission</a>
+                    <a class="dropdown-item" href="#">Why Buffalo</a>
+                    <a class="dropdown-item" href="#">Our Vision & Mission</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="box">
+        <div class="row justify-content">
+            <div class="col-md-3 left">
+                <div class="row" *ngFor="let item of nav_name">
+                    <p class="text" (click)="gotoCard(item.path)">{{item.name}} <i class="fa fa-angle-double-right"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-9 pl-md-5">
+                <router-outlet></router-outlet>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<footer>
+    <div class="container-fluid footer1">
+        <div class="row justify-content-center">
+
+            <div class="col-md-3">
+                <h6 class="mb-3 text-muted bold-text mt-5 "><b>Our Company</b></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">About Buffalo Express</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Conditions of Carriage</a></li>
+                    <li><a href="#">Conditions of Binding Corporate Rules</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h6 class="mb-3 text-muted bold-text mt-5 "><b>NEW CUSTOMER</b></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">Open an Account</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="mb-3 text-muted bold-text mt-5 "><b>MORE FROM BUFFALO EXPRESS</b></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">Fuel Surcharges</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Buffalo Express Locations</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 social">
+                <h6 class="mb-3 text-muted bold-text mt-5 "><b>FOLLOW BUFFALO EXPRESS</b></h6>
+                <p class="my-2 text-muted bold-text float-left">
+                    <span>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                      </span>
+                      <span>
+                        <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                      </span>
+                      <span>
+                        <a href="#" class="fa fa-twitter " aria-hidden="true"></a>
+                      </span>
+                      <span>
+                        <a href="#" class="fa fa-google" aria-hidden="true"></a>
+                      </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="row bg-dark text-light text-center">
+            <div class="col-12 mt-2">
+                <p> <small>2020 © All rights reserved</small> </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>

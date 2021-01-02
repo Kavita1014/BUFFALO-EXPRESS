@@ -1,0 +1,80 @@
+.fa {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 35px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    float: right;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }  
+
+
+  .footer1 {
+    overflow: hidden;
+    background: #262626;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.box{
+  margin: 2rem 10rem;
+  background-color: whitesmoke;
+  padding: 1rem;
+}
+
+.text  {
+  background-color: white;
+  color: black; /* White text */
+  font-size: 24px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  width: 100%;
+  padding: 17px 25px 17px 40px;
+  margin: 0 0 !important;
+}
+
+/* Darker background on mouse-over */
+.text:hover {
+  background-color: dodgerblue;
+  color:white
+}
+
+.left
+{
+  background-color: white;
+  height: fit-content;
+}
+
+@media screen and (max-width:767px)
+{
+  .box{
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 1rem;
+  }
+}
